@@ -45,13 +45,13 @@ const Footer = () => {
 						Canada V3R 5L5
 					</div>
 					<div className="max-w-[300px]">
-						AMI Merchants Services Inc 13841 Harper Road Surrey, BC
-						Canada V3R 5L5
+						American Merchants Inc 2219 W Olive Ave #106 Burbank, CA
+						USA 91506
 					</div>
 
 					<div className="max-w-[300px]">
-						AMI Merchants Services Inc 13841 Harper Road Surrey, BC
-						Canada V3R 5L5
+						AMI Merchant Services Pvt Ltd Suite 120 Edmonton Mall
+						The Bristol, Gurgaon, India
 					</div>
 				</div>
 			</div>
