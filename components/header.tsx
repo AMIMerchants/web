@@ -123,6 +123,7 @@ const Header = () => {
 							{countryOptions.map((c: any) => {
 								return (
 									<Button
+										key={c.code}
 										variant={"ghost"}
 										className="flex gap-2 items-center justify-start w-full"
 										onClick={() => {
