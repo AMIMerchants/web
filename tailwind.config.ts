@@ -1,4 +1,8 @@
 import type { Config } from "tailwindcss";
+ 
+const {
+  default: flattenColorPalette,
+} = require("tailwindcss/lib/util/flattenColorPalette");
 
 const config = {
 	darkMode: ["class"],
@@ -52,7 +56,10 @@ const config = {
 					DEFAULT: "hsl(var(--card))",
 					foreground: "hsl(var(--card-foreground))",
 				},
-        BLUE: "#0561e2"
+				BLUE: "#0245a1",
+				BLUELIGHT: "#024eb6",
+				BGBLUE: "#ecf7fb",
+				GREY: "#838e9e",
 			},
 			borderRadius: {
 				lg: "var(--radius)",
@@ -78,7 +85,18 @@ const config = {
 			},
 		},
 	},
-	plugins: [require("tailwindcss-animate")],
+	plugins: [require("tailwindcss-animate"), addVariablesForColors],
 } satisfies Config;
+
+function addVariablesForColors({ addBase, theme }: any) {
+	let allColors = flattenColorPalette(theme("colors"));
+	let newVars = Object.fromEntries(
+	  Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
+	);
+   
+	addBase({
+	  ":root": newVars,
+	});
+  }
 
 export default config;
