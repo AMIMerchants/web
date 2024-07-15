@@ -75,68 +75,66 @@ const AboutUsPage = () => {
 					</Section>
 				</div>
 			</div>
-			<div className="w-full min-h-[70vh] bg-[url('/misc/blueBigWave.svg')] object-cover bg-no-repeat relative">
-				<Section>
-					<Image
-						src={"/misc/randomSquare.png"}
-						alt={""}
-						height={500}
-						width={400}
-						className="absolute top-10 l-10"
-					/>
-				</Section>
+			<div className="w-full min-h-[70vh] bg-[url('/misc/blueBigWave.svg')] object-cover bg-no-repeat">
 				<Section>
 					<div className="flex flex-col items-center justify-center gap-8 py-8">
 						<span className="font-medium text-BLUE text-5xl">
 							Our Services
 						</span>
 						<div className="flex justify-center items-center gap-8 w-[60%]">
-							<div className="bg-white rounded-lg p-5 flex flex-col justify-center items-center max-w-[400px] gap-6">
+							<div className="bg-white rounded-lg p-5 flex flex-col justify-center items-center min-w-[400px] aspect-[4/3] gap-6">
 								<Image
 									src={"/icons/projectIntro.png"}
 									alt={""}
 									height={60}
 									width={60}
 								/>
-								<span className="text-xl font-medium">Project Introduction</span>
-								<span className="text-center font-light">
+								<span className="text-xl font-medium">
+									Project Introduction
+								</span>
+								<span className="text-center font-light text-sm text-neutral-500">
 									At AMI, we take pride in delivering superior
 									customer service, ensuring that our clients
 									receive the highest level of support and
 									satisfaction.
 								</span>
 							</div>
-							<div className="bg-white rounded-lg p-5 flex flex-col justify-center items-center max-w-[400px] gap-6">
+							<div className="bg-white rounded-lg p-5 flex flex-col justify-center items-center min-w-[400px] aspect-[4/3] gap-6">
 								<Image
 									src={"/icons/experiencedTeam.png"}
 									alt={""}
 									height={60}
 									width={60}
 								/>
-								<span className="text-xl font-medium">Project Introduction</span>
-								<span className="text-center font-light">
-									At AMI, we take pride in delivering superior
-									customer service, ensuring that our clients
-									receive the highest level of support and
-									satisfaction.
+								<span className="text-xl font-medium">
+									Experienced Team
+								</span>
+								<span className="text-center font-light text-sm text-neutral-500">
+									Our team consists of knowledgeable and
+									experienced professionals dedicated to
+									providing exceptional assistance with setup,
+									troubleshooting, and optimizing payment
+									processes.
 								</span>
 							</div>
-							<div className="bg-white rounded-lg p-5 flex flex-col justify-center items-center max-w-[400px] gap-6">
+							<div className="bg-white rounded-lg p-5 flex flex-col justify-center items-center min-w-[400px] aspect-[4/3] gap-6">
 								<Image
 									src={"/icons/seamlessExperience.png"}
 									alt={""}
 									height={60}
 									width={60}
+									className="bg-BLUE rounded-lg p-2"
 								/>
-								<span className="text-xl font-medium">Project Introduction</span>
-								<span className="text-center font-light">
-									At AMI, we take pride in delivering superior
-									customer service, ensuring that our clients
-									receive the highest level of support and
-									satisfaction.
+								<span className="text-xl font-medium">
+									Seamless Experience
+								</span>
+								<span className="text-center font-light text-sm text-neutral-500">
+									We are committed to making your experience
+									with our services seamless and satisfying,
+									addressing all your needs efficiently and
+									effectively.
 								</span>
 							</div>
-							
 						</div>
 					</div>
 				</Section>

@@ -32,7 +32,7 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en" className={`${poppins.variable} font-sans`}>
-			<body className="min-h-[100vh] w-full flex flex-col gap-5 justify-between items-center overflow-y-scroll no-scrollbar">
+			<body className="min-h-[100vh] w-full flex flex-col gap-5 justify-between items-center overflow-y-scroll no-scrollbar bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-blue-50 to-white -z-20">
 				<Header />
 				<ScrollArea className="flex-grow flex flex-col items-center justify-center mt-[100px] no-scrollbar w-full h-full">
 					{children}
