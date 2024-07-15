@@ -75,13 +75,71 @@ const AboutUsPage = () => {
 					</Section>
 				</div>
 			</div>
-			<div className="w-full min-h-[50vh] bg-[url('/misc/blueBigWave.png')] object-cover">
-				<Image
-					src={"/misc/blueBigWave.png"}
-					alt={""}
-					height={500}
-					width={400}
-				/>
+			<div className="w-full min-h-[70vh] bg-[url('/misc/blueBigWave.svg')] object-cover bg-no-repeat relative">
+				<Section>
+					<Image
+						src={"/misc/randomSquare.png"}
+						alt={""}
+						height={500}
+						width={400}
+						className="absolute top-10 l-10"
+					/>
+				</Section>
+				<Section>
+					<div className="flex flex-col items-center justify-center gap-8 py-8">
+						<span className="font-medium text-BLUE text-5xl">
+							Our Services
+						</span>
+						<div className="flex justify-center items-center gap-8 w-[60%]">
+							<div className="bg-white rounded-lg p-5 flex flex-col justify-center items-center max-w-[400px] gap-6">
+								<Image
+									src={"/icons/projectIntro.png"}
+									alt={""}
+									height={60}
+									width={60}
+								/>
+								<span className="text-xl font-medium">Project Introduction</span>
+								<span className="text-center font-light">
+									At AMI, we take pride in delivering superior
+									customer service, ensuring that our clients
+									receive the highest level of support and
+									satisfaction.
+								</span>
+							</div>
+							<div className="bg-white rounded-lg p-5 flex flex-col justify-center items-center max-w-[400px] gap-6">
+								<Image
+									src={"/icons/experiencedTeam.png"}
+									alt={""}
+									height={60}
+									width={60}
+								/>
+								<span className="text-xl font-medium">Project Introduction</span>
+								<span className="text-center font-light">
+									At AMI, we take pride in delivering superior
+									customer service, ensuring that our clients
+									receive the highest level of support and
+									satisfaction.
+								</span>
+							</div>
+							<div className="bg-white rounded-lg p-5 flex flex-col justify-center items-center max-w-[400px] gap-6">
+								<Image
+									src={"/icons/seamlessExperience.png"}
+									alt={""}
+									height={60}
+									width={60}
+								/>
+								<span className="text-xl font-medium">Project Introduction</span>
+								<span className="text-center font-light">
+									At AMI, we take pride in delivering superior
+									customer service, ensuring that our clients
+									receive the highest level of support and
+									satisfaction.
+								</span>
+							</div>
+							
+						</div>
+					</div>
+				</Section>
 			</div>
 
 			<div className="min-h-[60vh] flex justify-between items-center w-[80%]">
@@ -97,7 +155,7 @@ const AboutUsPage = () => {
 							streamline their payment processes, reduce costs,
 							and enhance their overall operational efficiency.
 							Our goal is to empower our partners and merchants
-							with the tools they need to succeed in today's
+							with the tools they need to succeed in today&apos;s
 							competitive market.
 						</span>
 					</div>
