@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { useRouter } from "next/navigation";
+import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { useEffect, useState } from "react";
 
 import { Button } from "./ui/button";
@@ -43,6 +43,7 @@ const Header = () => {
 	const [countryOpen, setCountryOpen] = useState(false);
 
 	const router = useRouter();
+	const pathname = usePathname();
 
 	useEffect(() => {
 		console.log(countryOptions.filter((c: any) => c.code == country));
@@ -68,7 +69,7 @@ const Header = () => {
 				<Button
 					variant={"link"}
 					onClick={() => router.push("about-us")}
-					className="text-GREY font-medium"
+					className={"text-GREY font-medium " + (pathname.includes('about-us') ? ' text-BLUE font-semibold ' : '')}
 				>
 					About Us
 				</Button>
